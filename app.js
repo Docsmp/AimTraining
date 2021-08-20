@@ -35,8 +35,7 @@ function startGame(){
     setInterval(decreaseTime, 1000)
     createRandomCircle()
     setTime(time)
-    setcurentTime()
-    curentTime = Date.now()
+
 }
 
 function decreaseTime(){
@@ -57,11 +56,7 @@ function setTime (value) {
     timeEl.innerHTML = `00:${value}`
 }
 
-function setcurentTime (curTime){
-   curentTime.innerHTML = curTime
 
-    console.log(curTime)
-}
 
 function finishGame() {
     timeEl.parentElement.classList.add('hide')
